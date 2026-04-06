@@ -22,7 +22,7 @@ jobs:
           mkdir -p admin-portafolio/src/enviroments
           echo "export const environment = {
             production: true,
-            apiUrl: 'https://wsappnet10-h4dwfyduh4dwg2gw.mexicocentral-01.azurewebsites.net'
+            apiUrl: 'https://wsappnet10-h4dwfyduh4dwg2gw.mexicocentral-01.azurewebsites.net/api'
           };" > admin-portafolio/src/enviroments/environment.ts
       - name: Build And Deploy
         id: builddeploy
