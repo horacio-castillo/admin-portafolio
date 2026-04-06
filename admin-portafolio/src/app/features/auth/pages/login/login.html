@@ -1,0 +1,33 @@
+<div class="login-container">
+  <div class="login-card">
+
+    <h2>Login</h2>
+
+    <form (ngSubmit)="login()">
+
+      <div class="form-group">
+        <input
+          type="email"
+          placeholder="Email"
+          [(ngModel)]="model.email"
+          name="email"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="password"
+          placeholder="Password"
+          [(ngModel)]="model.password"
+          name="password"
+          required
+        />
+      </div>
+
+      <button type="submit">Entrar</button>
+
+    </form>
+
+  </div>
+</div>
