@@ -35,7 +35,7 @@ export class RegisterComponent {
 
     this.authApi.register(this.form.value).subscribe({
       next: () => {
-        this.router.navigate(['/auth/login']);
+        this.router.navigate(['/login']);
       },
       error: (err) => {
         console.error('Error en registro:', err);
